@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mari Starnd Østby</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        img{
+            width: 100%;
+            display: block;
+        }
+
+        body {
+            background-color: lightblue;
+            color: aliceblue;
+            background: linear-gradient(135deg, lightblue, #b3d9ff);
+        
+        }
+
+        header,
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid white;
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: lightpink;
+            font-size: x-large;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        header a {
+            color: lightpink;
+            text-decoration: none;
+            transition: opacity 0.3s, transform 0.3s;
+           
+        }
+
+        header a:hover {
+            text-decoration: underline;
+            transform: scale(1.5);
+
+        }
+
+
+        footer :hover {
+            transform: scale(1.5);
+
+        }
+
+        section {
+            margin-top: 20px;
+            padding: 30px;
+        }
+
+
+        .overskrift {
+            text-align: center;
+            border: 2px, solid white;
+            border-radius: 10px;
+            width: 400px;
+            margin: auto;
+            height: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        .flex {
+            width: 80%;
+            margin: auto;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .boks {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            flex-direction: column; 
+            font-size: large;
+        }
+
+        .boks p {
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .boks img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        boks h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+    <header>
+        <a href="bildegaleri.html">Bildegalleri</a>
+        <a href="skole.html">Skole</a>
+        <a href="fritid.html">Fritid</a>
+    </header>
+
+    <main>
+        <section>
+
+            <div class="overskrift">
+                <h1>Mari Strand Østby</h1>
+            </div>
+
+        </section>
+        
+        <section>
+            <div class="flex">
+               
+                <div class="boks">
+                    
+                    <h2 class="h2">Om meg!</h2>
+                    
+                    <p> 
+                     Hei! Jeg heter Mari og er 17 år. Jeg bor på Eiksamrka i Bærum og har gjort det nesten hele livet. 
+                     Jeg har to søsken, en ledre bror og en yngre søster. De heter OLaf og Greta, Olaf er 19 og Greta 
+                     er 13. Foreldren mine heter Håvard og Gudrun, begge de jobber som forskere. Mamma forsker på hvordan 
+                     krig kan påvirke skolegang spesiel for jenter ved Peace Research Institute Oslo (PRIO) og pappa 
+                     underviser på UIO og fosker på ett eller annet, ikke helt sikker på hva. Vi har også en katt som heter
+                      Casemiro (oppklat etter manchester united spilleren). En funfackt om familien min er at vi bodde ett 
+                      år i USA, fra sommeren 2019 til sommeren 2020.  
+                    </p>
+                </div>
+                
+                <div class="boks">
+                    <img src="bilder/ism.jpg" alt="">
+                </div>
+            
+            </div>
+        </section>
+    
+    </main>
+
+    <footer class="footer">
+        <p> Telefon nummer: +47 92297356</p>
+        <p>Mail: mari.strand.oestb@gmail.com</p>
+    </footer>
+
+
+
+
+</body>
+
+</html

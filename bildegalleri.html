@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildegalleri</title>
+
+<style>
+     .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-auto-rows: auto;
+            gap: 7px;
+            width: 90%; 
+            margin: auto;    
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.);
+        }
+
+        img:hover {
+            transform: scale(1.1);            
+        }
+
+        .stor {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+</style>
+
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.);
+        }
+
+        img:hover {
+            transform: scale(1.1);            
+        }
+
+
+</head>
+<body>
+    
+</body>
+
+
+
+<section>
+
+        <div class="container">
+                <div> <img src="bilder/fogm.jpg" alt=""> </div>
+                <div> <img src="bilder/ism.jpg" alt=""></div>
+                <div> <img src="bilder/as.jpg" alt=""></div>
+                <div> <img src="bilder/m.jpg" alt=""></div>
+                <div class="stor"> <img src="bilder/mogf.jpg" alt=""></div>
+                <div> <img src="bilder/iogm.jpg" alt=""></div>
+                <div> <img src="bilder/gogm.jpg" alt=""></div>
+                <div> <img src="bilder/mam.jpg" alt=""></div>
+                <div> <img src="bilder/nyc.heic" alt=""></div>
+        </div>
+
+</section>
+
+</html>
