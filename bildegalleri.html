@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bildegalleri</title>
 
-<style>
-     .container {
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
             display: grid;
             grid-template-columns: 1fr 1fr 2fr;
             grid-auto-rows: auto;
             gap: 7px;
-            width: 90%; 
-            margin: auto;    
+            width: 90%;
+            margin: auto;
 
         }
 
@@ -25,7 +31,7 @@
         }
 
         img:hover {
-            transform: scale(1.1);            
+            transform: scale(1.1);
         }
 
         .stor {
@@ -33,33 +39,83 @@
             grid-row: span 2;
         }
 
-</style>
+        body {
+            background-color: lightblue;
+            color: aliceblue;
+            background: linear-gradient(135deg, lightblue, #b3d9ff);
 
+        }
 
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        header,
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid white;
+            background-color: aliceblue;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: lightpink;
+            font-size: x-large;
+            padding: 20px;
+            margin: 20px;
         }
 
-        img:hover {
-            transform: scale(1.1);            
+        header a {
+            color: lightpink;
+            text-decoration: none;
+            transition: opacity 0.3s, transform 0.3s;
+
         }
+
+        header a:hover {
+            text-decoration: underline;
+            transform: scale(1.5);
+
+        }
+
+
+        footer :hover {
+            transform: scale(1.5);
+
+        }
+
+        section {
+            margin-top: 20px;
+            padding: 30px;
+        }
+
+        .overskrift {
+            text-align: center;
+            border: 2px, solid white;
+            border-radius: 10px;
+            width: 400px;
+            margin: auto;
+            height: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            
+        }
+    </style>
+
 
 
 </head>
+
 <body>
-    
-</body>
 
 
+    <header>
+        <a href="hovedside.html">Hovedside</a>
+        <a href="skole.html">Skole</a>
+        <a href="fritid.html">Fritid</a>
+    </header>
 
-<section>
+    <main>
+        <section>
 
-        <div class="container">
+            <h1 class="overskrift">Bilder av meg famile og venner!</h1>
+
+            <div class="container">
                 <div> <img src="bilder/fogm.jpg" alt=""> </div>
                 <div> <img src="bilder/ism.jpg" alt=""></div>
                 <div> <img src="bilder/as.jpg" alt=""></div>
@@ -69,8 +125,17 @@
                 <div> <img src="bilder/gogm.jpg" alt=""></div>
                 <div> <img src="bilder/mam.jpg" alt=""></div>
                 <div> <img src="bilder/nyc.heic" alt=""></div>
-        </div>
+            </div>
 
-</section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p> Telefon nummer: +47 92297356</p>
+        <p>Mail: mari.strand.oestb@gmail.com</p>
+    </footer>
+
+   
+</body>
 
 </html>
