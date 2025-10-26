@@ -1,0 +1,56 @@
+ *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        img{
+            width: 100%;
+            display: block;
+        }
+
+        body {
+            background-color: lightblue;
+            color: aliceblue;
+            background: linear-gradient(135deg, lightblue, #b3d9ff);
+        
+        }
+
+        header,
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid white;
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: lightpink;
+            font-size: x-large;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        header a {
+            color: lightpink;
+            text-decoration: none;
+            transition: opacity 0.3s, transform 0.3s;
+           
+        }
+
+        header a:hover {
+            text-decoration: underline;
+            transform: scale(1.5);
+
+        }
+
+
+        footer :hover {
+            transform: scale(1.5);
+
+        }
+
+        section {
+            margin-top: 20px;
+            padding: 30px;
+        }
+

@@ -1,230 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=table, initial-scale=1.0">
-    <title>Timeplan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skole</title>
 
-    <style>
-        * {
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        
-
-        body {
-            background-color: lightblue;
-            color: aliceblue;
-            background: linear-gradient(135deg, lightblue, #b3d9ff);
-
-        }
-
-        header,
-        footer {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border: 2px solid white;
-            background-color: aliceblue;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: lightpink;
-            font-size: x-large;
-            padding: 20px;
-            margin: 20px;
-        }
-
-        header a {
-            color: lightpink;
-            text-decoration: none;
-            transition: opacity 0.3s, transform 0.3s;
-
-        }
-
-        header a:hover {
-            text-decoration: underline;
-            transform: scale(1.5);
-
-        }
+    <link rel="stylesheet" href="skole.css">
+    <link rel="stylesheet" href="style.css">
 
 
-        footer :hover {
-            transform: scale(1.5);
-
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        tr,
-        td {
-            border: 1px solid;
-
-        }
-
-        .dager {
-            background-color: lightpink;
-            font-weight: bold;
-        }
-
-        .overskrift {
-            font-size: large;
-
-        }
-
-        .timeplan {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            
-        }
-
-        .bakruntider{
-            background-color: white;
-        }
-    </style>
-
+   
 </head>
 
-<header>
-    <a href="index.html">Hovedside</a>
-    <a href="skole.html">Skole</a>
-    <a href="fritid.html">Fritid</a>
-    <a href="bildegalleri.html">Bildegalleri</a>
-   
+<body>
+    <header>
+        <a href="index.html">Hovedside</a>
+        <a href="skole.html">Skole</a>
+        <a href="fritid.html">Fritid</a>
+        <a href="bildegalleri.html">Bildegalleri</a>
+    </header>
 
-</header>
+    <main>
+        <section class="skole-info">
+            <h1>Nadderud VGS</h1>
+            <img src="bilder/nadderud.jpeg" alt="Nadderud VGS" class="skole-bilde">
+            <p>
+                Jeg går på Nadderud videregående skole i Bærum. Det er en flott skole med mange engasjerte lærere
+                og hyggelige elever. Skolen har gode fasiliteter og et bredt tilbud av fag og aktiviteter.
+            </p>
+            <p>
+                Jeg trives veldig godt her og har fått mange nye venner. Skolen ligger fint til med god tilgang
+                til kollektivtransport, og det er et godt læringsmiljø.
+            </p>
+        </section>
 
+        <section class="valgfag">
+            <h2>Mine Valgfag</h2>
 
-<main>
-    <section>
-        <h2 class="overskrift"> Oddetalsuker </h2>
+            <div class="fag-container">
+                <div class="fag-kort it">
+                    <div class="fag-kort-innhold">
+                        <h3>IT 1</h3>
+                        <p>
+                            I IT lærer jeg programmering, webutvikling og hvordan datamaskiner fungerer.
+                            Vi jobber mye med HTML, CSS og JavaScript. Det er et kreativt og spennende fag
+                            hvor jeg får lage egne nettsider og programmer.
+                        </p>
+                    </div>
+                </div>
 
-        <body>
-            <table class="timeplan">
+                <div class="fag-kort kjemi">
+                    <div class="fag-kort-innhold">
+                        <h3>Kjemi</h3>
+                        <p>
+                            Kjemi handler om å forstå hvordan stoffer er bygd opp og hvordan de reagerer med hverandre.
+                            Vi gjør eksperimenter i laboratoriet og lærer om atomer, molekyler og kjemiske reaksjoner.
+                            Det er fascinerende å forstå hvordan verden fungerer på mikronivå.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fag-kort sosiologi">
+                    <div class="fag-kort-innhold">
+                        <h3>Sosiologi</h3>
+                        <p>
+                            Sosiologi er studiet av samfunnet og hvordan mennesker lever sammen.
+                            Vi lærer om kultur, sosiale normer, gruppeadferd og samfunnsstrukturer.
+                            Det er interessant å analysere hvordan samfunnet påvirker oss og hvordan vi påvirker
+                            samfunnet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeplan">
+            <h2>Min Timeplan</h2>
+
+            <h3>Oddetallsuker</h3>
+            <table>
                 <tr class="dager">
-                    <td>Tidspungt</td>
+                    <td>Tidspunkt</td>
                     <td>Mandag</td>
                     <td>Tirsdag</td>
                     <td>Onsdag</td>
                     <td>Torsdag</td>
                     <td>Fredag</td>
                 </tr>
-                
-            <div class="bakruntider">
                 <tr>
-                    <td> 08:15 - 09:50 </td>
-                    <td> IT 1 </td>
-                    <td> Fri </td>
-                    <td> Norsk </td>
-                    <td> Matte </td>
-                    <td> Kjemi </td>
+                    <td>08:15 - 09:50</td>
+                    <td>IT 1</td>
+                    <td>Fri</td>
+                    <td>Norsk</td>
+                    <td>Matte</td>
+                    <td>Kjemi</td>
                 </tr>
                 <tr>
-                    <td> 10:00 - 11:35 </td>
-                    <td> Kjemi</td>
-                    <td> Sosiologi</td>
-                    <td> Gym</td>
-                    <td> Spansk</td>
-                    <td> IT 1</td>
+                    <td>10:00 - 11:35</td>
+                    <td>Kjemi</td>
+                    <td>Sosiologi</td>
+                    <td>Gym</td>
+                    <td>Spansk</td>
+                    <td>IT 1</td>
                 </tr>
                 <tr>
-                    <td> 11:35 - 12:20</td>
-                    <td> Spising </td>
-                    <td> Spising </td>
-                    <td> Spising </td>
-                    <td> Spising </td>
-                    <td> Spising </td>
+                    <td>11:35 - 12:20</td>
+                    <td>Spising</td>
+                    <td>Spising</td>
+                    <td>Spising</td>
+                    <td>Spising</td>
+                    <td>Spising</td>
                 </tr>
                 <tr>
-                    <td> 12:20 - 13:55 </td>
-                    <td> Historie </td>
-                    <td> Spansk </td>
-                    <td> IT 1 </td>
-                    <td> Sosiologi </td>
-                    <td> Norsk </td>
+                    <td>12:20 - 13:55</td>
+                    <td>Historie</td>
+                    <td>Spansk</td>
+                    <td>IT 1</td>
+                    <td>Sosiologi</td>
+                    <td>Norsk</td>
                 </tr>
                 <tr>
-                    <td> 14:05 - 15:40 </td>
-                    <td> Sosiologi </td>
-                    <td> Matte </td>
-                    <td> Fri </td>
-                    <td> Kjemi </td>
-                    <td> Fri </td>
-
+                    <td>14:05 - 15:40</td>
+                    <td>Sosiologi</td>
+                    <td>Matte</td>
+                    <td>Fri</td>
+                    <td>Kjemi</td>
+                    <td>Fri</td>
                 </tr>
-            </div>
-            
-        </table>
-
-            <h3 class="overskrift">Partallsuker</h3>
-
-            <table class="timeplan">
-                <tr class="dager">
-                    <td> Tidspungt </td>
-                    <td> Mandag </td>
-                    <td> Tirsdag </td>
-                    <td> Onsdag </td>
-                    <td> Torsdag </td>
-                    <td> Fredag </td>
-                </tr>
-                
-            <div class="bakruntider">
-                <tr>
-                    <td> 08:15 - 09:50 </td>
-                    <td> Matte </td>
-                    <td> Fri </td>
-                    <td> Norsk </td>
-                    <td> Matte </td>
-                    <td> Kjemi </td>
-                </tr>
-                <tr>
-                    <td> 10:00 - 11:35 </td>
-                    <td> Kjemi</td>
-                    <td> Sosiologi</td>
-                    <td> Gym</td>
-                    <td> Spansk</td>
-                    <td> IT 1</td>
-                </tr>
-                <tr>
-                    <td> 11:35 - 12:20</td>
-                    <td> Spising </td>
-                    <td> Spising </td>
-                    <td> Spising </td>
-                    <td> Spising </td>
-                    <td> Spising </td>
-                </tr>
-                <tr>
-                    <td> 12:20 - 13:55 </td>
-                    <td> Historie </td>
-                    <td> Spansk </td>
-                    <td> IT 1 </td>
-                    <td> Sosiologi</td>
-                    <td> Norsk</td>
-                </tr>
-                <tr>
-                    <td> 14:05 - 15:40</td>
-                    <td> Fri</td>
-                    <td> Matte</td>
-                    <td> Fri </td>
-                    <td> Klassens time</td>
-                    <td> Fri </td>
-
-                </tr>
-                </div>
             </table>
-    </section>
-</main>
 
-<footer class="footer">
-    <p> Telefon nummer: +47 92297356</p>
-    <p>Mail: mari.strand.oestb@gmail.com</p>
-</footer>
+            <h3>Partallsuker</h3>
+            <table>
+                <tr class="dager">
+                    <td>Tidspunkt</td>
+                    <td>Mandag</td>
+                    <td>Tirsdag</td>
+                    <td>Onsdag</td>
+                    <td>Torsdag</td>
+                    <td>Fredag</td>
+                </tr>
+                <tr>
+                    <td>08:15 - 09:50</td>
+                    <td>Matte</td>
+                    <td>Fri</td>
+                    <td>Norsk</td>
+                    <td>Matte</td>
+                    <td>Kjemi</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:35</td>
+                    <td>Kjemi</td>
+                    <td>Sosiologi</td>
+                    <td>Gym</td>
+                    <td>Spansk</td>
+                    <td>IT 1</td>
+                </tr>
+                <tr>
+                    <td>11:35 - 12:20</td>
+                    <td>Spising</td>
+                    <td>Spising</td>
+                    <td>Spising</td>
+                    <td>Spising</td>
+                    <td>Spising</td>
+                </tr>
+                <tr>
+                    <td>12:20 - 13:55</td>
+                    <td>Historie</td>
+                    <td>Spansk</td>
+                    <td>IT 1</td>
+                    <td>Sosiologi</td>
+                    <td>Norsk</td>
+                </tr>
+                <tr>
+                    <td>14:05 - 15:40</td>
+                    <td>Fri</td>
+                    <td>Matte</td>
+                    <td>Fri</td>
+                    <td>Klassens time</td>
+                    <td>Fri</td>
+                </tr>
+            </table>
+        </section>
 
+        <section class="fremtid">
+            <h2>Hvor ser jeg meg selv om 10 år?</h2>
+
+            <div class="fremtid-innhold">
+                <div class="fremtid-tekst">
+                    <p>
+                        Om ti år aner jeg ikke hva jeg vil jobbe med. Jeg aner ikke hva jeg vil etter
+                        videregående. Det eneste jeg vet jeg vil er å reise når jeg er ferdig med vgs før
+                        jeg begynner på studie. Når chat skulle lage et bilde til meg sa jeg at jeg ikke
+                        ante hva jeg skulle bli men at den skulle ta en jobb mange har.
+                    </p>
+                </div>
+
+                <div class="fremtid-bilde">
+                    <img src="bilder/chatgpt.png" alt="Meg om 10 år">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Telefon: +47 92297356</p>
+        <p>Mail: mari.strand.oestb@gmail.com</p>
+    </footer>
 </body>
 
 </html>
