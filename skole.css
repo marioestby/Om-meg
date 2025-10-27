@@ -183,28 +183,4 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        @media (max-width: 768px) {
-            .skole-info h1 {
-                font-size: 2rem;
-            }
-
-            .valgfag h2 {
-                font-size: 1.7rem;
-            }
-
-            section {
-                padding: 20px;
-            }
-
-            table {
-                font-size: 0.8rem;
-            }
-
-            td {
-                padding: 8px 4px;
-            }
-
-            .fremtid-innhold {
-                grid-template-columns: 1fr;
-            }
-        }
+        
